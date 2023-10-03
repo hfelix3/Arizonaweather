@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona Weather</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <h1>Arizona Weather Dashboard</h1>
+    <main>
+
+        <section id="left">
+            <form>
+                <div>
+                    <h3>Search for a City:</h3>
+                </div>
+                    <input class="searchInput" type="text" placeholder="Enter city name" name="search">
+                <div>
+                    <button id="searchBtn" type="submit">search</button>
+                </div>
+            </form>
+                    <hr class="hr">
+                <div class="cities">
+                    <button id="phx" type="submit">Phoenix</button>
+                <div class="city"></div>
+            
+                    <button id="mrn" type="submit">Marana</button>
+                <div class="city"></div>
+
+                    <button id="tus" type="submit">Tucson</button>
+                <div class="city"></div>
+        </section>
+
+        <section class="right">
+            <section id="rightTop">
+                <section class="current-weatherTop">
+                        <section id="currentCity" class="ti">               
+                            <h3>Current city weather</h3>
+                            <span id="currentDate"></span>
+                        </section>        
+                    <div>
+                        <p>Temp:</p>
+                        <span id="temperatureCurrent">
+                            <i class="fas fa-thermometer-full"></i>
+                        </span>
+
+                        <p>Wind:</p>
+                        <span id="windCurrent">
+                            <i class="fas fa-wind"></i>
+                        </span>
+
+                        <p>Humidity:</p>
+                        <span id="humidityCurrent">
+                            <i class="fas fa-humidity"></i>
+                        </span>
+                    </div>
+                </section>    
+            </section>
+
+            <section id="Forecast" class="rightBottom">
+                <section class="weather-forecastBottom">
+                    <h3>5-Day Forecast:</h3>
+                    <section class="cards">
+                        <div class="weatherCardDayOne">
+                            <div class="weather-info">
+                                <h3>Sunny (date here)</h3>
+                            </div>    
+                                <div class="weather-icon">
+                                    <img src="./assets/images/weather-icon.png" alt="weather icon">
+                                </div>    
+                                <div>
+                                    <p>Temp:</p>
+                                    <span id="dayOneTemp">
+                                        <i class="fas fa-thermometer-full"></i>
+                                    </span>
+                                
+                                    <p>Wind:</p>
+                                    <span id="dayOneWind">
+                                        <i class="fas fa-wind"></i>
+                                    </span>
+                                
+                                    <p>Humidity:</p>
+                                    <span id="dayOneHumidity">
+                                        <i class="fas fa-humidity"></i>
+                                    </span>
+                                </div>
+                    
+                        </div>
+
+                        <div class="weathercarddaytwo">
+                            <div class="weather-info">
+                                <h3>Sunny (date here)</h3>
+                            </div>    
+                                <div class="weather-icon">
+                                    <img src="./assets/images/weather-icon.png" alt="weather icon">
+                                </div>    
+                                <div>
+                                    <p>Temp:</p>
+                                    <span>
+                                        <i class="fas fa-thermometer-full"></i>
+                                    </span>
+                                
+                                    <p>Wind:</p>
+                                    <span>
+                                        <i class="fas fa-wind"></i>
+                                    </span>
+                                
+                                    <p>Humidity:</p>
+                                    <span>
+                                        <i class="fas fa-humidity"></i>
+                                    </span>
+                                </div>
+                    
+                        </div>
+
+                        <div class="weathercarddaythree">
+                            <div class="weather-info">
+                                <h3>Sunny (date here)</h3>
+                            </div>    
+                                <div class="weather-icon">
+                                    <img src="./assets/images/weather-icon.png" alt="weather icon">
+                                </div>    
+                                <div>
+                                    <p>Temp:</p>
+                                    <span>
+                                        <i class="fas fa-thermometer-full"></i>
+                                    </span>
+                                
+                                    <p>Wind:</p>
+                                    <span>
+                                        <i class="fas fa-wind"></i>
+                                    </span>
+                                
+                                    <p>Humidity:</p>
+                                    <span>
+                                        <i class="fas fa-humidity"></i>
+                                    </span>
+                                </div>
+                    
+                        </div>
+
+                        <div class="weathercarddayfour">
+                            <div class="weather-info">
+                                <h3>Sunny (date here)</h3>
+                            </div>    
+                                <div class="weather-icon">
+                                    <img src="./assets/images/weather-icon.png" alt="weather icon">
+                                </div>    
+                                <div>
+                                    <p>Temp:</p>
+                                    <span>
+                                        <i class="fas fa-thermometer-full"></i>
+                                    </span>
+                                
+                                    <p>Wind:</p>
+                                    <span>
+                                        <i class="fas fa-wind"></i>
+                                    </span>
+                                
+                                    <p>Humidity:</p>
+                                    <span>
+                                        <i class="fas fa-humidity"></i>
+                                    </span>
+                                </div>
+                    
+                        </div>
+
+                        <div class="weathercarddayfive">
+                            <div class="weather-info">
+                                <h3>Sunny (date here)</h3>
+                            </div>    
+                                <div class="weather-icon">
+                                    <img src="./assets/images/weather-icon.png" alt="weather icon">
+                                </div>    
+                                <div>
+                                    <p>Temp:</p>
+                                    <span>
+                                        <i class="fas fa-thermometer-full"></i>
+                                    </span>
+                                
+                                    <p>Wind:</p>
+                                    <span>
+                                        <i class="fas fa-wind"></i>
+                                    </span>
+                                
+                                    <p>Humidity:</p>
+                                    <span>
+                                        <i class="fas fa-humidity"></i>
+                                    </span>
+                                </div>
+                    
+                        </div>
+                    </section>    
+
+                </section>
+            </section>
+        </section>    
+                
+
+    </main>
+                <script src="./assets/js/script.js"></script>
+
+                <!-- ?do I keep this bottom script link here -->
+                <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>

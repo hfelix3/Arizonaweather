@@ -1,0 +1,80 @@
+* {
+    background-color: black;
+    color: aquamarine;
+    margin: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    background-color: aquamarine;
+    background-image: linear-gradient(to right, black, aquamarine);
+
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    padding: 7px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  button:active {
+    background-color: black;
+    color: aquamarine;
+  }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #currentDate {
+    color:aquamarine
+} */
+
+.current-weatherTop {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aquamarine;
+
+}
+
+.ti {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-forecastBottom {
+    display: flex;
+    flex-direction: column;    
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-card {
+    border: 1px solid aquamarine;
+}
