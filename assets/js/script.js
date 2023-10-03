@@ -9,10 +9,11 @@ var currentCity = document.getElementById('currentCity');
 var temperatureCurrent = document.getElementById('temperatureCurrent');
 var windCurrent = document.getElementById('windCurrent');
 var humidityCurrent = document.getElementById('humidityCurrent');
-// var weatherIcon = document.getElementById('weatherIcon');
+var weatherIcon = document.getElementById('weatherIcon');
 
+var dateOne = document.getElementById('dateOne');
 var dayOneTemp = document.getElementById('dayOneTemp');
-vThreedayOneWind = document.getElementById('dayOneWind');
+var dayOneWind = document.getElementById('dayOneWind');
 var dayOneHumidity = document.getElementById('dayOneHumidity');
 
 var dayTwoTemp = document.getElementById('dayTwoTemp');
@@ -42,10 +43,13 @@ function getCity() {
   .then(function (data) {
     console.log(data);
     currentCity.textContent = data.city.name;
+    // weatherIcon.textContent = data.list[0].weather[0].icon;
+
     temperatureCurrent.textContent = Math.round(data.list[0].main.temp)+` °F`;
     windCurrent.textContent = data.list[0].wind.speed+` mph`;
     humidityCurrent.textContent = data.list[0].main.humidity+` %`;
-    // weatherIcon.textContent = data.list[0].weather[0].icon;
+
+    // date1.textContent = data.list[8].dt_txt;
     dayOneTemp.textContent = Math.round(data.list[8].main.temp)+` °F`;
     dayOneWind.textContent = data.list[8].wind.speed+` mph`;
     dayOneHumidity.textContent = data.list[8].main.humidity+` %`;
